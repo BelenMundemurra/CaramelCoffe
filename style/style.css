@@ -325,6 +325,9 @@ footer .socialmedia {
   background-color: #adadad15;
 }
 
+.card-img-top {
+  width: 100%;
+}
 
 .allProducts article h3 {
   padding: 10px;

@@ -1,0 +1,303 @@
+@charset "UTF-8";
+/*Imports scss*/ /*Estilos header + footer y generales*/
+/*Fuentes*/
+/*Estilo header*/
+/*Footer*/
+/*Reset css*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  background-color: rgba(231, 223, 213, 0.188);
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/*header*/
+header {
+  background-color: black;
+}
+
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+/*nav*/
+.navbar {
+  margin: 0px 7px;
+  height: 6vh;
+}
+
+.navbar .navbar-nav {
+  position: relative;
+  z-index: 1;
+  background-color: black;
+}
+
+.navbar .nav-item a {
+  color: rgb(255, 255, 255) !important;
+  margin-right: 25px;
+}
+
+.navbar .nav-item a:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.navbar button {
+  border: none;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/*Footer*/
+footer {
+  background-color: rgb(16, 15, 15);
+  display: flex;
+  justify-content: center;
+}
+
+footer i {
+  font-size: 2.5rem;
+  color: rgb(234, 226, 226);
+}
+
+footer li {
+  list-style: none;
+}
+
+footer li a {
+  color: rgb(234, 226, 226);
+}
+
+footer li a:hover, footer li i:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+footer .socialmedia {
+  display: inline-flex;
+}
+
+/*Estilo botones*/
+/*Boton negro*/
+.buttonBlack a {
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 30px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.428);
+  width: 15vh;
+}
+
+/*Boton Formulario*/
+.buttonForm {
+  border-radius: 0;
+  font-weight: bold;
+  margin: 2%;
+  padding: 8px;
+  width: 15vh;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid transparent;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.428);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/*Boton bordo*/
+.buttonWhite a {
+  border: none;
+  font-weight: bold;
+  padding: 1.5vh;
+  margin: 2vh;
+  color: rgb(255, 255, 255);
+  background-color: #510712;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.368);
+  margin-bottom: 50px;
+  width: 20vh;
+}
+
+/*@media header*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header h1 {
+    font-size: 1rem;
+  }
+  .nav-link {
+    font-size: 0.9rem;
+    margin-right: 0.8px;
+  }
+  .navbar .nav-item a {
+    margin-right: 5px;
+  }
+}
+@media only screen and (max-width: 395px) {
+  header h1 {
+    font-size: 0.9rem;
+  }
+}
+/*Estilos index.html*/
+/*Nuevos productos*/
+/*Nuevos productos*/
+.jumbotron {
+  background-image: url(../img/portada.jpg);
+  background-size: cover;
+  height: 94vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: end;
+  color: #ffffff;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.jumbotron h2 {
+  font-size: 5rem;
+  padding: 10px;
+  font-family: Staatliches, cursive;
+}
+
+.jumbotron p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.jumbotron a {
+  transition: transform 1s;
+  text-decoration: none;
+}
+
+.jumbotron a:hover {
+  transform: scale(1.1);
+}
+
+/*Estilos Product Page*/
+/*Categorías*/
+/*Estilos Productos*/
+.allProducts {
+  width: 80%;
+  height: 100vh;
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  border-color: black;
+}
+
+.allProducts article {
+  background-color: rgba(184, 174, 174, 0.058);
+  margin: 10px;
+}
+
+.allProducts article h3 {
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.allProducts article p {
+  font-size: 1rem;
+}
+
+.allProducts article a {
+  color: rgb(255, 255, 255) !important;
+  text-decoration: none;
+}
+
+.allProducts article a:hover {
+  background-color: rgb(38, 37, 37);
+}
+
+.allProducts article img {
+  padding: 15px;
+  height: 300px;
+  width: 250px;
+}
+
+.product_list {
+  margin-top: 15px;
+}
+
+/*Estilo carrito*/
+.main_cart {
+  width: 60%;
+}
+
+/*Estilos generales Shop y Cart*/
+.titleGeneral h2 {
+  color: rgb(56, 55, 55);
+  font-size: 1.5rem;
+  padding: 30px 0px 10px 0px;
+}
+
+.titleCart h2 {
+  text-align: left;
+}
+
+.main_cart {
+  height: 100vh;
+}
+
+.product_cart {
+  background-color: white;
+  height: 10vh;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  margin-top: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.098);
+}
+
+.product_cart svg {
+  height: 20%;
+}
+
+.product_cart h3 {
+  font-size: 1.5rem;
+}
+
+.info_cart {
+  text-align: left;
+  width: 73%;
+  margin: 0px 10px;
+}
+
+.img_cart {
+  height: 80%;
+  width: 20%;
+}
+
+.img_cart img {
+  height: 95%;
+}
+
+.main_cart button {
+  background-color: rgb(255, 255, 255);
+  margin: 20px;
+  width: 10%;
+  height: 4%;
+}
+
+.product_info {
+  display: flex;
+  align-items: center;
+}
+
+.card-body a {
+  border-color: black;
+}
+

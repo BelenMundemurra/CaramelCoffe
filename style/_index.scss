@@ -1,0 +1,43 @@
+/*Estilos index.html*/
+/*Nuevos productos*/
+$jumbotron-color: #ffffff;
+
+/*Nuevos productos*/
+.home-products {
+    height: 100vh;
+    display: flex;
+    img {
+        width: 2px;
+    }
+}
+
+.jumbotron {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content:end;
+    color: $jumbotron-color;
+    border-radius: 0;
+    margin-bottom: 0;
+    height: 100vh;
+    h2 {
+        font-size: 5rem;
+        padding: 10px;
+    }
+
+    p {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    a {
+        transition: transform 1s;
+        text-decoration: none;
+    }
+
+    a:hover {
+        transform: scale(1.1);
+    }
+}

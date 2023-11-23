@@ -1,0 +1,193 @@
+/*Estilos header + footer y generales*/
+/*Fuentes*/
+
+
+/*Estilo header*/
+$color-header: #635344;
+$header-color-background: #ECE3D6;
+
+/*Footer*/
+$footer-background: rgb(16, 15, 15);
+$footer-color: rgb(234, 226, 226);
+$footer-color-hover: rgb(192, 192, 192);
+
+/*Reset css*/
+* {
+    margin: 0;
+    padding: 0;
+}   
+
+body {
+    text-align: center;
+    font-family: $fuente-body;
+    background-color: rgba(231, 223, 213, 0.188);
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+/*header*/
+header {
+    background-color: $header-color-background;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: $color-header;
+    font-size: 1.3rem;
+    h1{
+        font-weight: bold;
+        color: #402311;
+        margin-left: 70px;
+        margin-bottom: 0;
+        font-size: 1.6rem;
+        border-bottom: #402311 solid 2px;
+    }
+}
+
+/*nav*/
+.navbar {
+    margin: 0px 7px;
+    height: 6vh;
+
+    .navbar-nav {
+        position: relative;
+        z-index: 1;
+        background-color: $header-color-background;
+    }
+    .nav-item a {
+        color: $color-header !important;
+        margin-right: 70px;
+    }
+
+    .nav-item a:hover {
+        border-bottom: 1px solid $color-header;
+    }
+
+    button {
+        border: none;
+    }
+
+} 
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/*Footer*/
+footer {
+    background-color: $footer-background;
+    display: flex;
+
+    i {
+        font-size: 2.5rem;
+        color: $footer-color;
+    }
+
+    li {
+        list-style: none;
+        text-align: start;
+        a {
+            color: $footer-color;
+        }
+
+        a:hover , i:hover{
+            color: #ebe2d8;
+            text-decoration: none;
+        }
+    }  
+
+    .list-navbar {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    }
+    .info-navbar {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 1.5rem 50px 0px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .brand-navbar {
+        font-size: 1.5rem;
+        border-bottom: white solid 1px;
+        width: fit-content;
+    }
+}
+
+/*Estilo botones*/
+/*Boton negro*/
+.buttonBlack a{
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 30px ;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.428);
+    width: 15vh;
+}
+
+/*Boton Formulario*/
+.buttonForm {
+    border-radius: 0;
+    font-weight: bold;
+    margin: 2%;
+    padding: 8px;
+    width: 15vh;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid transparent;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.428);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/*Boton bordo*/
+.buttonWhite a {
+    border: none;
+    font-weight: bold;
+    padding: 1.5vh;
+    margin: 2vh;
+    color: rgb(255, 255, 255);
+    background-color: #510712;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.368);
+    margin-bottom: 50px;
+    width: 20vh;
+}
+
+.home-products {
+    height: 100vh;
+    display: flex;
+    img {
+        width: 50%;
+    }
+}
+/*@media header*/
+@media only screen and (min-width:768px) and (max-width:1023px){
+    header {
+        h1{
+            font-size: 1rem;
+        }
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+        margin-right: 0.8px;
+    }
+
+    .navbar {
+        .nav-item a {
+            margin-right: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width:395px){
+    header {
+        h1{
+            font-size: 0.9rem;
+        }
+    }
+}

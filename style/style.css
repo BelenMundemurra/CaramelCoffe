@@ -202,9 +202,8 @@ footer .socialmedia {
 
 .semillas-1 {
   bottom: 70px;
-  width:20%;
   transform:  rotate(90deg);
-  right: -80px;
+  right: calc(-5%);
 }
 
 .semillas-2 {
